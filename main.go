@@ -6,8 +6,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/gorilla/mux"
-
 	"./routes"
 )
 
@@ -21,9 +19,7 @@ func main() {
 	httpListenAddress := getEnv(LISTEN_ADDRESS_ENV, DEFAULT_LISTEN_ADDRESS)
 	httpListenPort := getEnv(LISTEN_PORT_ENV, DEFAULT_LISTEN_PORT)
 
-	r := mux.NewRouter()
-	r.HandleFunc("/random", routes.RandomHandler)
-	r.HandleFunc("/names/{key}", routes.NamesHandler)
+	r := routes.Router()
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir(STATIC_DIR)))
 
 	http.Handle("/", r)
