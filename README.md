@@ -40,4 +40,15 @@ wu tang girls
 go test
 ```
 
+## Building in Docker
+
+```
+make docker
+```
+
+## Running in Docker
+
+```
+make run
+```
 
