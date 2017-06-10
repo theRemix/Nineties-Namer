@@ -12,6 +12,21 @@ LISTEN=127.0.0.1 \
 PORT=8080 \
 go run main.go
 ```
+### Dev
+
+```sh
+LISTEN=127.0.0.1 \
+PORT=8000 \
+go run main.go
+```
+
+```sh
+cd ui
+yarn install
+yarn run dev
+```
+_webpack proxies specific api requests to localhost:8000/[random,names]
+
 ### Curl interface
 
 `curl 127.0.0.1:8080/random`
