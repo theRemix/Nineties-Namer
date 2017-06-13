@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nineties-namer-service
+spec:
+  selector:
+    app: nineties-namer
+  ports:
+    - protocol: TCP
+      port: 80
