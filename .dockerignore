@@ -2,4 +2,4 @@
 */
 !Dockerfile
 !bin/
-!static/
+!public/

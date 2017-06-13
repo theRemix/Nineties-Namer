@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nineties-namer-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nineties-namer
+    spec:
+      containers:
+      - name: nineties-namer
+        image: theremix/nineties-namer:1.0.0
+        ports:
+        - containerPort: 80

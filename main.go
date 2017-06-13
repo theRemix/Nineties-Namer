@@ -9,7 +9,7 @@ import (
 	"./routes"
 )
 
-const STATIC_DIR = "./static/"
+const STATIC_DIR = "./public/"
 const LISTEN_ADDRESS_ENV = "LISTEN"
 const LISTEN_PORT_ENV = "PORT"
 const DEFAULT_LISTEN_ADDRESS = "0.0.0.0"
