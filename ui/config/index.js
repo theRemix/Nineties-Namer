@@ -1,6 +1,12 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
+const liveApiUrl = 'https://90s.fun';
+const localDevApiUrl = 'http://localhost:8000';
+
+// switch to localDevApiUrl for developing against local running api
+const apiUrl = liveApiUrl;
+
 module.exports = {
   build: {
     env: require('./prod.env'),
@@ -29,14 +35,14 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/random': {
-        target: 'http://localhost:8000/random',
+        target: `${ apiUrl }/random`,
         changeOrigin: true,
         pathRewrite: {
           '^/random': ''
         }
       },
       '/names': {
-        target: 'http://localhost:8000/names',
+        target: `${ apiUrl }/names`,
         changeOrigin: true,
         pathRewrite: {
           '^/names': ''

@@ -9,23 +9,27 @@ see [./routes/router.go](./routes/router.go)
 ### Running
 ```sh
 LISTEN=127.0.0.1 \
-PORT=8080 \
-go run main.go
-```
-### Dev
-
-```sh
-LISTEN=127.0.0.1 \
 PORT=8000 \
 go run main.go
 ```
 
+### Developing
+
+#### UI Dev
 ```sh
 cd ui
 yarn install
 yarn run dev
 ```
-_webpack proxies specific api requests to localhost:8000/[random,names]
+_webpack proxies specific api requests to https://90s.fun/[random,names]_
+
+#### API Dev
+
+if you want to use the ui
+
+run the server locally, update [./ui/config/index.js](./ui/config/index.js)
+
+change `const apiUrl = liveApiUrl;` to `const apiUrl = localDevApiUrl`
 
 ### Curl interface
 
