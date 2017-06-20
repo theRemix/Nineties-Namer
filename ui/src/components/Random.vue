@@ -48,6 +48,7 @@ h2, h3 {
   font-weight: normal;
 }
 .generate-button {
+  width: 100%;
   border-color: #E02394;
   color: #E02394;
   background: transparent;
@@ -57,5 +58,10 @@ h2, h3 {
 .generate-button:hover {
   color: #FFFFFF;
   background: #E02394;
+}
+@media (min-width: 768px) {
+  .generate-button {
+    width: auto;
+  }
 }
 </style>

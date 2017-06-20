@@ -55,8 +55,7 @@ input {
   width: 100%;
   border-bottom: 5px solid #000000;
   font-size: 20px;
-  font-style: italic;
-  color: #C4C4C4;
+  color: #000000;
   font-weight: bold;
   padding-bottom: 5px;
 }
@@ -65,24 +64,18 @@ input:nth-child(1) {
 }
 input::placeholder {
   color: #C4C4C4;
+  font-style: italic;
 }
 a {
   text-decoration: none;
   color: #000000;
-}
-.about, .right {
-  display: inline-block;
-  vertical-align: top;
-}
-.right {
-  width: 60%;
 }
 .random, .hash, .api {
   border: 1px solid #000000;
   margin-bottom: 30px;
 }
 .inner {
-  padding: 30px;
+  padding: 20px;
 }
 h2 {
   color: #FFFFFF;
@@ -93,5 +86,17 @@ h2 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .about, .right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .right {
+    width: 60%;
+  }
+  .inner, #app {
+    padding: 30px;
+  }
 }
 </style>

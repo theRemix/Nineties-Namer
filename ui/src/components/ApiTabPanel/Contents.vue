@@ -36,5 +36,12 @@ export default {
 .code-syntax-pink {
   color: #E22395;
 }
+i {
+  color: #000000;
+  font-style: normal;
+}
+i a {
+  color: #E22395;
+}
 </style>
 
