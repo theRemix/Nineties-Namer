@@ -50,7 +50,7 @@ button, .button {
   cursor: pointer;
   transition: 0.2s ease all;
 }
-input, .output {
+input {
   border: none;
   width: 100%;
   border-bottom: 5px solid #000000;
@@ -59,6 +59,12 @@ input, .output {
   color: #C4C4C4;
   font-weight: bold;
   padding-bottom: 5px;
+}
+input:nth-child(1) {
+  margin-bottom: 30px;
+}
+input::placeholder {
+  color: #C4C4C4;
 }
 a {
   text-decoration: none;
@@ -76,15 +82,16 @@ a {
   margin-bottom: 30px;
 }
 .inner {
-  padding: 50px;
+  padding: 30px;
 }
 h2 {
   color: #FFFFFF;
   background: #000000;
   font-size: 12px;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: left;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 </style>

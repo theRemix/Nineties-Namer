@@ -52,6 +52,7 @@ h2, h3 {
   color: #E02394;
   background: transparent;
   font-size: 16px;
+  margin-bottom: 30px;
 }
 .generate-button:hover {
   color: #FFFFFF;
