@@ -1,7 +1,8 @@
 <template>
   <div class="about">
-    <h2>Generate random names from the 90s!</h2>
-    <h3>as a service™</h3>
+    <h1>90s Namer</h1>
+    <h3>Generate random names from the 90s! as a service™</h3>
+    <p>Need some randomly generated names? 90s Namer will generate random names based on a hash or any input.</p>
     <p class="contribute">
       <a href="https://github.com/theRemix/Nineties-Namer">Contribute theRemix/Nineties-Namer</a>
     </p>
@@ -17,5 +18,8 @@ export default {
 <style scoped>
 h2, h3 {
   font-weight: normal;
+}
+.about {
+	width: 40%;
 }
 </style>

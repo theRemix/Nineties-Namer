@@ -1,8 +1,8 @@
 <template>
   <div class="random">
-    <h2>Click to generate new random name.</h2>
+    <h2>Generate a name</h2>
     <div>
-      <button type="button" v-on:click="generate">Generate</button>
+      <button type="button" v-on:click="generate" class='generate-button'>Generate</button>
     </div>
     <div class="output">
       <h3>{{randomName}}</h3>
