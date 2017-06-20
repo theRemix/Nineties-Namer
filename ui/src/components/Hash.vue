@@ -1,14 +1,14 @@
 <template>
   <div class="hash">
     <h2>Or enter some key to create a hashed random phrase</h2>
-    <div>
-      <input type="text" placeholder="your keywords (ex. v1.0.3)" v-on:keyup="generate" v-model="key" />
-    </div>
-    <div class="output">
-      <h3>{{hashedName}}</h3>
-    </div>
-    <div class="errors">
-      <p>{{errors}}</p>
+    <div class="inner">
+      <div>
+        <input type="text" placeholder="your keywords (ex. v1.0.3)" v-on:keyup="generate" v-model="key" />
+      </div>
+      <input class="output" placeholder="result" value="key" disabled/>
+      <div class="errors">
+        <p>{{errors}}</p>
+      </div>
     </div>
   </div>
 </template>

@@ -34,26 +34,49 @@ export default {
   text-align: left;
   color: #2c3e50;
   margin-top: 60px;
-  background: red;
   max-width: 980px;
   margin: 0 auto;
   content: "";
   display: table;
   clear: both;
 }
+button, .button {
+  border: 5px solid #000000;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s ease all;
+}
+input, .output {
+  border: none;
+  width: 100%;
+  border-bottom: 5px solid #000000;
+  font-size: 20px;
+  font-style: italic;
+  color: #C4C4C4;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
 .about, .right {
   display: inline-block;
   vertical-align: top;
 }
-.about {
-  background: blue;
-}
 .right {
-  background: green;
   width: 60%;
 }
 .random, .hash, .api {
   border: 1px solid #000000;
+  margin-bottom: 30px;
+}
+.inner {
+  padding: 50px;
 }
 h2 {
   color: #FFFFFF;
@@ -62,5 +85,6 @@ h2 {
   margin: 0;
   padding: 5px;
   text-align: left;
+  text-transform: uppercase;
 }
 </style>

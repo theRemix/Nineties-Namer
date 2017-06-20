@@ -1,8 +1,10 @@
 <template>
   <div class="api">
     <h2>Use the service!</h2>
-    <h3>it's pretty useful wherever you need randomly generated names</h3>
-    <api-tab-panel></api-tab-panel>
+    <div class="inner">
+      <h3>it's pretty useful wherever you need randomly generated names</h3>
+      <api-tab-panel></api-tab-panel>
+    </div>
   </div>
 </template>
 

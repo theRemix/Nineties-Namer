@@ -1,14 +1,14 @@
 <template>
   <div class="random">
     <h2>Generate a name</h2>
-    <div>
-      <button type="button" v-on:click="generate" class='generate-button'>Generate</button>
-    </div>
-    <div class="output">
-      <h3>{{randomName}}</h3>
-    </div>
-    <div class="errors">
-      <p>{{errors}}</p>
+    <div class="inner">
+      <div>
+        <button type="button" v-on:click="generate" class='generate-button'>Generate</button>
+      </div>
+      <input placeholder="result" v-model="randomName" class="output" disabled />
+      <div class="errors">
+        <p>{{errors}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -46,5 +46,15 @@ export default {
 <style scoped>
 h2, h3 {
   font-weight: normal;
+}
+.generate-button {
+  border-color: #E02394;
+  color: #E02394;
+  background: transparent;
+  font-size: 16px;
+}
+.generate-button:hover {
+  color: #FFFFFF;
+  background: #E02394;
 }
 </style>
