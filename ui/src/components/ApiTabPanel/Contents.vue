@@ -23,11 +23,18 @@ export default {
 </script>
 
 <style>
-code{
-
+.tab-contents {
+  font-size: 16px;
+  font-weight: bold;
 }
-pre{
-
+.code-inner {
+  padding-left: 10px;
+}
+.code-syntax-blue {
+  color: #1AD6C7;
+}
+.code-syntax-pink {
+  color: #E22395;
 }
 </style>
 
