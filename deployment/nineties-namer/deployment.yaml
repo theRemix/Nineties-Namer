@@ -12,6 +12,6 @@ spec:
     spec:
       containers:
       - name: nineties-namer
-        image: theremix/nineties-namer:1.0.1
+        image: theremix/nineties-namer:1.0.3
         ports:
         - containerPort: 80

@@ -56,9 +56,10 @@ li {
 }
 i {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
+  font-size: 14px;
 }
 </style>
 
