@@ -28,7 +28,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
@@ -49,6 +49,7 @@ button, .button {
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.2s ease all;
+  font-family: 'Montserrat', sans-serif;
 }
 input {
   border: none;
@@ -58,6 +59,7 @@ input {
   color: #000000;
   font-weight: bold;
   padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 input:nth-child(1) {
   margin-bottom: 30px;
@@ -65,6 +67,7 @@ input:nth-child(1) {
 input::placeholder {
   color: #C4C4C4;
   font-style: italic;
+  font-family: 'Montserrat', sans-serif;
 }
 a {
   text-decoration: none;
@@ -86,8 +89,9 @@ h2 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   .about, .right {
     display: inline-block;
     vertical-align: top;

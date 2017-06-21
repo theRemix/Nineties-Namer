@@ -22,6 +22,6 @@ h2, h3 {
 }
 .api {
   background: #2D2D2D;
-  color: white;
+  color: #BFBFBF;
 }
 </style>

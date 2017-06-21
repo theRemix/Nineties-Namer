@@ -56,7 +56,7 @@ h2, h3 {
 .show-for-large {
   display: none;
 }
-@media(min-width: 768px) {
+@media(min-width: 930px) {
   .show-for-large {
     display: inline;
   }

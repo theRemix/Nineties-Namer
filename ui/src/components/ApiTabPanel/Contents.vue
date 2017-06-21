@@ -26,6 +26,10 @@ export default {
 .tab-contents {
   font-size: 16px;
   font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+}
+.code {
+  margin-bottom: 10px;
 }
 .code-inner {
   padding-left: 10px;

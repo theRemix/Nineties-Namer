@@ -59,7 +59,7 @@ h2, h3 {
   color: #FFFFFF;
   background: #E02394;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   .generate-button {
     width: auto;
   }

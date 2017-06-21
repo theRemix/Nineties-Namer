@@ -6,7 +6,7 @@
         <span class="blue">Namer</span>
       </h1>
       <h3>Generate random names from the 90s! <span>as a service™</span></h3>
-      <p>Need some randomly generated names? 90s Namer will generate random names based on a hash or any input.</p>
+      <h3>Need some randomly generated names? 90s Namer will generate random names based on a hash or any input.</h3>
       <p class="contribute button">
         <a href="https://github.com/theRemix/Nineties-Namer">Contribute</a>
       </p>
@@ -23,36 +23,58 @@ export default {
 <style scoped>
 h1 {
   border-bottom: 5px solid black;
-  font-size: 50px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
+  font-weight: normal;
+  margin-top: -30px;
 }
 h1 span {
   display: block;
 }
 .pink {
   color: #E22395;
+  font-family: 'Monoton', sans-serif;
+  margin-bottom: -30px;
+  font-size: 150px;
 }
 .blue {
   color: #1AD6C7;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  position: relative;
+  bottom: 60px;
+  left: 50px;
+  font-weight: bold;
+  margin-bottom: -50px;
 }
 h3 span {
   font-style: italic;
 }
-h2, h3 {
-  font-weight: normal;
-}
 .about {
-  font-size: 14px;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
 }
 .about .inner {
-  padding-top: 0;
+  padding: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 930px) {
   .about {
     width: 30%;
     margin-right: 20px;
+  }
+  .about .inner {
+    padding: 20px;
+  }
+  .pink {
+    font-size: 100px;
+  }
+  .blue {
+    font-weight: 200;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
   }
 }
 </style>
