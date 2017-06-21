@@ -1,8 +1,10 @@
 # Nineties Namer
 
-Go implementation of Nineties Namer
+See and contribute to  [github.com/theRemix/go90s](https://github.com/theRemix/go90s)
 
-see [./routes/router.go](./routes/router.go)
+This is an Implementation of [Nineties Namer Lib](https://github.com/theRemix/go90s)
+
+Example [./routes/router.go](./routes/router.go)
 
 ## Usage
 
