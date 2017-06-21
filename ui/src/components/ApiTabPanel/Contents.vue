@@ -23,11 +23,29 @@ export default {
 </script>
 
 <style>
-code{
-
+.tab-contents {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
 }
-pre{
-
+.code {
+  margin-bottom: 10px;
+}
+.code-inner {
+  padding-left: 10px;
+}
+.code-syntax-blue {
+  color: #1AD6C7;
+}
+.code-syntax-pink {
+  color: #E22395;
+}
+i {
+  color: #000000;
+  font-style: normal;
+}
+i a {
+  color: #E22395;
 }
 </style>
 

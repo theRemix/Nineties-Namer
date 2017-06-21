@@ -1,24 +1,33 @@
 <template>
   <div class="content-js">
-    <code><pre>fetch('/random')
-  .then( res => res.text() )
-  .then( randomName => {
-    console.log( randomName );
-  })
-</pre></code>
-
-    <i>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Random.vue">Random Example on Github</a></i>
-
-    <code><pre>const someKey = 'v1.2.0-rc8';
-fetch(`/names/${someKey}`)
-  .then( res => res.text() )
-  .then( generatedName => {
-    console.log( generatedName );
-  })
-</pre></code>
-
-    <i>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Hash.vue">Names Example on Github</a></i>
-
+    <div class="code">
+      <span><span class="code-syntax-blue">fetch</span>(<span class="code-syntax-pink"> '/random' </span>)</span>
+      <div class="code-inner">
+        <span>.<span class="code-syntax-blue">then </span>(<span class="code-syntax-pink"> res </span>=> <span class="code-syntax-pink">res</span>.text() )</span>
+        <br>
+        <span>.<span class="code-syntax-blue">then </span>(<span class="code-syntax-pink"> randomName</span> => {</span>
+        <div class="code-inner">
+          <span><span class="code-syntax-blue">console</span>.<span class="code-syntax-blue">log</span>( <span class="code-syntax-pink">randomName  </span>);</span>
+        </div>
+        <span>})</span>
+      </div>
+    </div>
+    
+    <br>
+    <span><span class="code-syntax-blue">const someKey </span>= <span class="code-syntax-pink">'v1.2.0-rc8'</span>;</span>
+    <div class="code">
+      <span><span class="code-syntax-blue">fetch</span>(<span class="code-syntax-pink">`/names/</span>${<span class="code-syntax-blue">someKey</span>}<span class="code-syntax-pink">`</span>)</span>
+      <br>
+      <div class="code-inner">
+        <span>.<span class="code-syntax-blue">then</span>( <span class="code-syntax-pink">res</span> => <span class="code-syntax-pink">res</span>.text() )</span>
+        <br>
+        <span>.<span class="code-syntax-blue">then</span>( <span class="code-syntax-pink">generatedName</span> => {</span>
+        <div class="code-inner">
+          <span><span class="code-syntax-blue">console</span>.<span class="code-syntax-blue">log</span>(<span class="code-syntax-pink"> generatedName</span> );</span>
+        </div>
+        <span>})</span>
+      </div>
+    </div>
   </div>
 </template>
 
