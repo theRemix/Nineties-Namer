@@ -31,9 +31,10 @@ export default {
 <style scoped>
 ul {
   background: #000000;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
+  padding-left: 10px;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -42,7 +43,7 @@ ul {
 li {
   display: inline-block;
   color: #8C8C8C;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 .code-content {

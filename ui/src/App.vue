@@ -75,7 +75,7 @@ a {
 }
 .random, .hash {
   border: 1px solid #000000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .inner {
   padding: 20px;
@@ -83,9 +83,10 @@ a {
 h2 {
   color: #FFFFFF;
   background: #000000;
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
+  padding-left: 10px;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 2px;

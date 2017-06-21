@@ -24,10 +24,9 @@ export default {
 h1 {
   border-bottom: 5px solid black;
   text-align: center;
-  text-transform: uppercase;
   margin: 0;
   font-weight: normal;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 h1 span {
   display: block;
@@ -40,6 +39,7 @@ h1 span {
 }
 .blue {
   color: #1AD6C7;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 60px;
   letter-spacing: 5px;
@@ -58,6 +58,9 @@ h3 span {
 }
 .about .inner {
   padding: 0;
+}
+.contribute.button {
+  margin-top: 30px;
 }
 @media (min-width: 930px) {
   .about {
