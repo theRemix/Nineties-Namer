@@ -47,5 +47,10 @@ i {
 i a {
   color: #E22395;
 }
+
+i a:hover{
+  color: #000000;
+  cursor: pointer;
+}
 </style>
 

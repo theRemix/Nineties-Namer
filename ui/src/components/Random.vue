@@ -52,16 +52,28 @@ h2, h3 {
   border-color: #E02394;
   color: #E02394;
   background: transparent;
-  font-size: 16px;
+  /*font-size: 15px;*/
   margin-bottom: 30px;
 }
 .generate-button:hover {
   color: #FFFFFF;
   background: #E02394;
 }
+.generate-button:focus{
+  outline: none;
+}
+@media (min-width: 600px) {
+  .generate-button{
+    display: inline-block;
+    max-width: 200px;
+    margin: 0 auto 20px 0;
+  }
+}
+
 @media (min-width: 930px) {
   .generate-button {
     width: auto;
   }
 }
+
 </style>

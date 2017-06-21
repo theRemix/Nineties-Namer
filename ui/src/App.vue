@@ -27,6 +27,10 @@ export default {
 </script>
 
 <style>
+body{
+  margin:0;
+  padding:0;
+}
 #app {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,12 +38,19 @@ export default {
   text-align: left;
   color: #2c3e50;
   margin-top: 60px;
-  max-width: 980px;
+  /*max-width: 980px;*/
+  /*width: 100%;*/
   margin: 0 auto;
   content: "";
   display: table;
   clear: both;
 }
+@media (min-width: 930px) {
+  #app{
+    width: auto;
+  }
+}
+
 button, .button {
   border: 5px solid #000000;
   padding: 10px;
@@ -49,7 +60,13 @@ button, .button {
   letter-spacing: 2px;
   cursor: pointer;
   transition: 0.2s ease all;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover{
+  background-color: #000000;
+  color: white;
 }
 input {
   border: none;
@@ -60,7 +77,17 @@ input {
   font-weight: bold;
   padding-bottom: 5px;
   font-family: 'Montserrat', sans-serif;
+  background-color: white;
 }
+
+input[type="text"]{
+  
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
 input:nth-child(1) {
   margin-bottom: 30px;
 }
@@ -75,7 +102,15 @@ a {
 }
 .random, .hash {
   border: 1px solid #000000;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
+}
+@media (min-width: 930px) {
+  .random, .hash{
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .inner {
   padding: 20px;
@@ -98,10 +133,23 @@ h2 {
     vertical-align: top;
   }
   .right {
-    width: 60%;
+    width: 70%;
+    box-sizing: border-box;
+    padding-right: 20px;
   }
   .inner, #app {
     padding: 30px;
+  }
+}
+
+.api{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (min-width: 930px) {
+  .api{
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 </style>
