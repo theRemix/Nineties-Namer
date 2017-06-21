@@ -20,8 +20,4 @@ export default {
 h2, h3 {
   font-weight: normal;
 }
-.api {
-  background: #2D2D2D;
-  color: #BFBFBF;
-}
 </style>

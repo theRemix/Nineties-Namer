@@ -5,7 +5,12 @@
       <li v-on:click="activeTab = 'go'" v-bind:class="{ 'tab-active': activeTab==='go' }">Go</li>
       <li v-on:click="activeTab = 'js'" v-bind:class="{ 'tab-active': activeTab==='js' }">Js</li>
     </ul>
-    <contents v-bind:active-tab="activeTab" class="inner"></contents>
+    <contents v-bind:active-tab="activeTab" class="inner code-content"></contents>
+
+    <i v-if='activeTab === "go"'>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/routes/router.go">Example on Github</a></i>
+
+    <i v-if='activeTab === "js"'>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Random.vue">Random Example on Github</a></i>
+    <i v-if='activeTab === "js"'>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Hash.vue">Names Example on Github</a></i>
   </div>
 </template>
 
@@ -40,8 +45,19 @@ li {
   margin-right: 20px;
   cursor: pointer;
 }
+.code-content {
+  background: #2D2D2D;
+  color: #BFBFBF;
+  margin-bottom: 10px;
+}
 .tab-active {
   color: #1AD6C7;
+}
+i {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 </style>
 

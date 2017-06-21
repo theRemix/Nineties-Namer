@@ -73,7 +73,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
-.random, .hash, .api {
+.random, .hash {
   border: 1px solid #000000;
   margin-bottom: 30px;
 }

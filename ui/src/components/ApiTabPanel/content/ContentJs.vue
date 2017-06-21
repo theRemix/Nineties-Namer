@@ -12,7 +12,7 @@
         <span>})</span>
       </div>
     </div>
-    <i>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Random.vue">Random Example on Github</a></i>
+    
     <br>
     <span><span class="code-syntax-blue">const someKey </span>= <span class="code-syntax-pink">'v1.2.0-rc8'</span>;</span>
     <div class="code">
@@ -28,9 +28,6 @@
         <span>})</span>
       </div>
     </div>
-
-    <i>See: <a href="https://github.com/theRemix/Nineties-Namer/blob/master/ui/src/components/Hash.vue">Names Example on Github</a></i>
-
   </div>
 </template>
 
