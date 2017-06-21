@@ -5,7 +5,7 @@
       <div>
         <input type="text" placeholder="your keywords (ex. v1.0.3)" v-on:keyup="generate" v-model="key" />
       </div>
-      <input class="output" placeholder="result" value="key" disabled/>
+      <input class="output" placeholder="result" v-model="hashedName" disabled/>
       <div class="errors">
         <p>{{errors}}</p>
       </div>
