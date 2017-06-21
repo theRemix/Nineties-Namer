@@ -1,14 +1,14 @@
 <template>
   <div class="hash">
-    <h2>Enter some key to create a hashed random word.</h2>
-    <div>
-      <input type="text" placeholder="ex. v1.0.3" v-on:keyup="generate" v-model="key" />
-    </div>
-    <div class="output">
-      <h3>{{hashedName}}</h3>
-    </div>
-    <div class="errors">
-      <p>{{errors}}</p>
+    <h2>Or enter some key <span class="show-for-large">to create a hashed random phrase</span></h2>
+    <div class="inner">
+      <div>
+        <input type="text" placeholder="your keywords (ex. v1.0.3)" v-on:keyup="generate" v-model="key" />
+      </div>
+      <input class="output" placeholder="result" v-model="hashedName" disabled/>
+      <div class="errors">
+        <p>{{errors}}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -52,5 +52,13 @@ export default {
 <style scoped>
 h2, h3 {
   font-weight: normal;
+}
+.show-for-large {
+  display: none;
+}
+@media(min-width: 930px) {
+  .show-for-large {
+    display: inline;
+  }
 }
 </style>
