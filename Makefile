@@ -28,7 +28,7 @@ ui: uiclean uideps
 	@mv ui/dist/* ${PUBLIC_PATH}
 	@echo "built ui into ${PUBLIC_PATH}"
 
-docker: go ui
+docker:
 	docker build -t ${IMAGE} .
 
 run: docker

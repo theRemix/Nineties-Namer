@@ -64,7 +64,7 @@ go test
 ## Building in Docker
 
 ```
-make docker
+make go ui docker
 ```
 
 ## Running in Docker
