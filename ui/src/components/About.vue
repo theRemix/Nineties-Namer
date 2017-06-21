@@ -26,7 +26,7 @@ h1 {
   text-align: center;
   margin: 0;
   font-weight: normal;
-  margin-top: -60px;
+  margin-top: -40px;
 }
 h1 span {
   display: block;
@@ -66,6 +66,9 @@ h3 span {
   .about {
     width: 30%;
     margin-right: 20px;
+  }
+  h1 {
+    margin-top: -60px;
   }
   .about .inner {
     padding: 20px;
