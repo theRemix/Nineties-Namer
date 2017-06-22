@@ -9,7 +9,6 @@ import (
 	"./routes"
 )
 
-const STATIC_DIR = "./public/"
 const LISTEN_ADDRESS_ENV = "LISTEN"
 const LISTEN_PORT_ENV = "PORT"
 const DEFAULT_LISTEN_ADDRESS = "0.0.0.0"
@@ -19,13 +18,8 @@ func main() {
 	httpListenAddress := getEnv(LISTEN_ADDRESS_ENV, DEFAULT_LISTEN_ADDRESS)
 	httpListenPort := getEnv(LISTEN_PORT_ENV, DEFAULT_LISTEN_PORT)
 
-	r := routes.Router()
-	r.PathPrefix("/").Handler(http.FileServer(http.Dir(STATIC_DIR)))
-
-	http.Handle("/", r)
-
 	srv := &http.Server{
-		Handler:     r,
+		Handler:     routes.Router(),
 		Addr:        httpListenAddress + ":" + httpListenPort,
 		ReadTimeout: 15 * time.Second,
 	}
