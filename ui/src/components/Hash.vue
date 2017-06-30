@@ -14,35 +14,49 @@
 </template>
 
 <script>
+
 export default {
   name: 'hash',
-  data: () => ({
-    key: '',
-    hashedName: '',
-    errors: ''
-  }),
-  methods: {
-    generate: function (event) {
+  data: () => {
+    return {
+      key: window.location.hash !== '' ? decodeURI(window.location.hash.substr(1)) : '',
+      hashedName: '',
+      errors: ''
+    }
+  },
+  created: function () {
+    const loadName = key => fetch(`/names/${key}`)
+      .then(res => {
+        if (!res.ok) {
+          throw res
+        } else {
+          return res.text()
+        }
+      })
+      .then(hashedName => {
+        this.hashedName = hashedName
+      })
+      .catch(error => {
+        this.errors = 'An error occurred when requesting the API.'
+        console.error(error)
+      })
+
+    window.onhashchange = () => {
+      this.key = decodeURI(window.location.hash.substr(1))
       if (this.key.length === 0) {
         this.hashedName = ''
         return
       }
+      loadName(this.key)
+    }
 
-      fetch(`/names/${this.key}`)
-        .then(res => {
-          if (!res.ok) {
-            throw res
-          } else {
-            return res.text()
-          }
-        })
-        .then(hashedName => {
-          this.hashedName = hashedName
-        })
-        .catch(error => {
-          this.errors = 'An error occurred when requesting the API.'
-          console.error(error)
-        })
+    if (this.key.length > 0) {
+      loadName(this.key)
+    }
+  },
+  methods: {
+    generate: function () {
+      window.location.hash = this.key
     }
   }
 }
